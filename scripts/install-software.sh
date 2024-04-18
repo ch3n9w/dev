@@ -44,6 +44,7 @@ fi
 git submodule update --init --recursive
 
 BASEDIR=~/.config
+CURDIR=$(pwd)
 read -p "Do you want to overwrite or backup the configuration file? (o/b): " response
 
 if [ "$response" == "o" ]; then
@@ -53,12 +54,12 @@ if [ "$response" == "o" ]; then
     yes | rm -r $BASEDIR/lf
     yes | rm -r $BASEDIR/todo
     yes | rm -r $BASEDIR/nvim
-    cp -r ./tmux $BASEDIR/
-    cp -r ./zsh/zsh $BASEDIR/
-    cp -r ./zsh/zshrc ~/.zshrc
-    cp -r ./lf $BASEDIR/
-    cp -r ./todo $BASEDIR/
-    cp -r ./nvim $BASEDIR/
+    ln -s -f $CURDIR/tmux $BASEDIR/
+    ln -s -f $CURDIR/zsh/zsh $BASEDIR/
+    ln -s -f $CURDIR/zsh/zshrc ~/.zshrc
+    ln -s -f $CURDIR/lf $BASEDIR/
+    ln -s -f $CURDIR/todo $BASEDIR/
+    ln -s -f $CURDIR/nvim $BASEDIR/
 elif [ "$response" == "b" ]; then
     echo "Backup the configuration file..."
     mv $BASEDIR/tmux $BASEDIR/tmux_bak || echo "$BASEDIR/tmux not found. Skip."
@@ -67,12 +68,12 @@ elif [ "$response" == "b" ]; then
     mv $BASEDIR/lf $BASEDIR/lf_bak || echo "$BASEDIR/lf not found. Skip."
     mv $BASEDIR/todo $BASEDIR/todo_bak || echo "$BASEDIR/todo not found. Skip."
     mv $BASEDIR/nvim $BASEDIR/nvim_bak || echo "$BASEDIR/nvim not found. Skip."
-    cp -r ./tmux $BASEDIR/
-    cp -r ./zsh/zsh $BASEDIR/
-    cp -r ./zsh/zshrc ~/.zshrc
-    cp -r ./lf $BASEDIR/
-    cp -r ./todo $BASEDIR/
-    cp -r ./nvim $BASEDIR/
+    ln -s $CURDIR/tmux $BASEDIR/
+    ln -s $CURDIR/zsh/zsh $BASEDIR/
+    ln -s $CURDIR/zsh/zshrc ~/.zshrc
+    ln -s $CURDIR/lf $BASEDIR/
+    ln -s $CURDIR/todo $BASEDIR/
+    ln -s $CURDIR/nvim $BASEDIR/
 else
     echo "Invalid response. Please enter 'o' or 'b'."
     exit 1
