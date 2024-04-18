@@ -36,7 +36,7 @@ if [ $(uname -s) = "Darwin" ]; then
     echo "Detect macOS, installing packages with homebrew..."
     brew tap zegervdv/zathura
     brew update
-    brew install git tmux zsh lf ranger kitty rsync htop bat python fzf unzip zoxide lsd fd wget ripgrep neovim glow zathura todo-txt clang nodejs
+    brew install git tmux zsh lf ranger kitty rsync htop bat python fzf unzip zoxide lsd fd wget ripgrep neovim glow zathura todo-txt nodejs
 fi
 
 # git submodule init
