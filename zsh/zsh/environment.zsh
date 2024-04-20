@@ -5,6 +5,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:/usr/lib:$GOPATH/bin:$JAVA_HOME/bin:$JRE_HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin
 
 export LC_ALL="en_US.UTF-8"
+export LANGUAGE="en_US"
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 
