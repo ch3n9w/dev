@@ -16,18 +16,6 @@
 [submodule "zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm.git
-[submodule "tmux/plugins/tmux-sensible"]
-	path = tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible.git
-[submodule "tmux/plugins/tmux-continuum"]
-	path = tmux/plugins/tmux-continuum
-	url = https://github.com/tmux-plugins/tmux-continuum.git
-[submodule "tmux/plugins/tmux-resurrect"]
-	path = tmux/plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect.git
 [submodule "zsh/zsh/plugins/powerlevel10k"]
 	path = zsh/zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
@@ -46,9 +34,3 @@
 [submodule "zsh/zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "tmux/plugins/tmux-cpu"]
-	path = tmux/plugins/tmux-cpu
-	url = https://github.com/tmux-plugins/tmux-cpu.git
-[submodule "tmux/plugins/tmux"]
-	path = tmux/plugins/tmux
-	url = https://github.com/catppuccin/tmux.git
